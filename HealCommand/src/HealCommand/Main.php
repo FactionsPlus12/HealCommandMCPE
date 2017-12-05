@@ -1,24 +1,20 @@
 <?php
 
 
-namespace CustomItemName;
+namespace HealCommand;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerJoinEvent;
-use pocketmine\utils\TextFormat;
-use pocketmine\item/Item;
-
 
 class Main extends PluginBase implements Listener{
 	
 	public function onEnable(){
-		$this->getserver()->getLogger()->info("CustomItemName enabled!")
+		$this->getserver()->getLogger()->info("HealCommand enabled!")
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
 	public function onDisable(){
-		$this->getserver()->getLogger()->info("CustomItemName disabled!");
+		$this->getserver()->getLogger()->info("HealCommand disabled!");
 	}
 	
 	case "heal";
